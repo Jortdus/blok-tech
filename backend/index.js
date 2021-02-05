@@ -8,7 +8,7 @@ const name = prompt('What is your steamcommunity url:  ');
 steam.resolve(`${name}`).then(id => {
 
     console.log(id);
-    steam.getUserOwnedGames(id).then(ownedGames => {
-        console.log(ownedGames);
+    steam.getUserRecentGames(id).then(recentGames => {
+        console.log(recentGames[0]);
     });
 });
