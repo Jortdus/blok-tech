@@ -9,6 +9,9 @@ steam.resolve(`${name}`).then(id => {
 
     console.log(id);
     steam.getUserRecentGames(id).then(recentGames => {
-        console.log(recentGames[0]);
+        for (var i = 0; i < recentGames.length; ++i) {
+            console.log(Math.floor(recentGames[i].playTime / 60));
+        }
+        
     });
 });
