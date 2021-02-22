@@ -1,4 +1,4 @@
-const dotenv = require('dotenv').config()
+require('dotenv').config()
 const SteamAPI = require('steamapi');
 const prompt = require('prompt-sync')();
 const steam = new SteamAPI(process.env.STEAMAPI);
