@@ -11,6 +11,8 @@
 
 Block Tech Assignement; Focus on matching features and Node.JS
 
+## What does it do?
+This app focuses on providing an experience for steam users to connect to people with the same preferences. 
 ## Table of Contents
 * [Features](#features)
 * [Usage](#usage)
@@ -20,7 +22,7 @@ Block Tech Assignement; Focus on matching features and Node.JS
 * [License](#license)
 
 ## Features
-
+Retrieving information from the steamAPI and connects users around the world. 
 
 
 ## Usage
