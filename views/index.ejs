@@ -2,29 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="../static/css/style.css">
+    <%- include('../view/partials/head') %>
 </head>
 
 <body>
     <main>
-        <h1>Gamematch</h1>
-        <h3>enter your steamID</h3>
-        <form action="/" method="post">
-            <input type="text" name="steamID" placeholder="steamID">
-            <input type="submit" value="Send">
-        </form>
 
-        <h3>or</h3>
+        <%- include('../view/partials/steamid') %>
+        
 
         <a href="https://store.steampowered.com/login/">
             <img src="../static/img/steamimg.jpg" id="steamimg" alt="">
         </a>
     </main>
-
+    <footer>
+        <%- include('../view/partials/footer') %>
+    </footer>
 </body>
 
 </html>
