@@ -54,8 +54,7 @@ This project uses the following open source packages:
 + [Npm](https://www.npmjs.com/)
 + [Nodemon](https://nodemon.io/)
 + [Express](http://expressjs.com/)
-+ [Handlebars](https://handlebarsjs.com/)
-+ [Sass](https://sass-lang.com/)
++ [Ejs](http://ejs.co/)
 
 ## License
 Matching app is released under the [MIT](https://github.com/jortdus/blok-tech/blob/main/LICENSE)
