@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+const connectDB = require('./model/db.js')
+
+connectDB();
 
 app.use('/static', express.static(__dirname + '/static'));
 
@@ -21,3 +24,7 @@ app.use(function (req, res, next) {
 app.listen(port, () => {
     console.log(`listening to port ${port}`)
 });
+
+
+
+
