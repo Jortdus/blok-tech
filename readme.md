@@ -30,7 +30,7 @@ To clone and run this application, you need [Git](https://git-scm.com/) and [Nod
     # Clone this repository
     $ git clone https://github.com/jortdus/blok-tech.git
     # Go into the repository
-    $ cd matching-app
+    $ cd blok-tech
 
     # Install dependencies
     $ npm install
