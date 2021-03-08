@@ -18,6 +18,6 @@
 		"nodemon": "^2.0.7"
 	},
 	"scripts": {
-		"start": "npm run start"
+		"start": "node server.js"
 	}
 }
