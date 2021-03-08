@@ -14,7 +14,7 @@ app.set('view engine', 'ejs');
 
 // rendering
 app.get('/', (req, res) => {
-    res.render('/views/layouts/index.ejs');
+    res.render('layouts/index');
 });
 
 // 404 error handling 
@@ -22,6 +22,6 @@ app.use(function (req, res, next) {
     res.status(404).send("This page does not exist.")
 })
 
-
+app.listen(port);
 
 
