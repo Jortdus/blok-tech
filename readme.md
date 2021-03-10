@@ -13,17 +13,20 @@ Block Tech Assignement; Focus on matching features and Node.JS
 
 ## What does it do?
 This app focuses on providing an experience for steam users to connect to people with the same preferences. 
+
+A user will login using their steamID or username and in the future with openID via steam. Data retrieved from the steamAPI will be filtered and send to a database and matched to that specific user. The user can than match his profile to other users and find a match based on a few parameters. 
+
 ## Table of Contents
 * [Features](#features)
 * [Usage](#usage)
 * [Support](#support)
-* [Roadmap](#roadmap)
 * [Credits](#credits)
 * [License](#license)
 
 ## Features
-Retrieving information from the steamAPI and connects users around the world. 
-
+Retrieving information from the steamAPI.
+Combining API retrieved data and user information into a scheme in a database.
+Matching users based on API data.
 
 ## Usage
 To clone and run this application, you need [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/) (which comes with [npm](https://www.npmjs.com/)) installed on your computer. From your command line:
@@ -46,9 +49,6 @@ Note: If you're using Linux Bash for Windows, [see this guide](https://www.howto
 ## Support
 Don't bother me.
 
-## Roadmap
-In this section ideas for this project will appear in the future.
-
 ## Credits
 This project uses the following open source packages:
 
@@ -57,6 +57,7 @@ This project uses the following open source packages:
 + [Nodemon](https://nodemon.io/)
 + [Express](http://expressjs.com/)
 + [Ejs](http://ejs.co/)
++ [Body-parser](https://www.npmjs.com/package/body-parser)
 
 ## License
 Matching app is released under the [MIT](https://github.com/jortdus/blok-tech/blob/main/LICENSE)
