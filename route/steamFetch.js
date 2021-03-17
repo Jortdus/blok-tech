@@ -28,7 +28,7 @@ router.post('/login', (req, res) => {
                     })
                     .save()
                     .then(result => 
-                        res.redirect('/app')
+                        res.redirect('/profile')
                     )
                 })
             }).catch(err => {
