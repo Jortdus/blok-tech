@@ -14,6 +14,10 @@ router.get('/', (req, res) => {
     res.render('layouts/index', { message: '' })
 })
 
+router.get('/profile', (req, res) => {
+    res.render('layouts/profile')
+})
+
 router.post('/login', (req, res) => {
     const { id: steamUser } = req.body
     User.findOne({username: steamUser}).then(result => {
