@@ -14,25 +14,23 @@ router.get('/', (req, res) => {
     res.render('layouts/index', { message: '' })
 })
 
-router.get('/profile', (req, res) => {
-    res.render('layouts/profile')
-})
-
 router.post('/login', (req, res) => {
     const { id: steamUser } = req.body
     User.findOne({username: steamUser}).then(result => {
         if (!result) {
             steam.resolve(steamUser).then(id => {
+
                 steam.getUserSummary(id).then(userSummary => {
+                    console.log(userSummary)
                     new User({
                         username: steamUser,
                         steamID: userSummary.steamID,
-                        country: userSummary.countryCode || '',
-                        realName: userSummary.realName || ''
+                        country: userSummary.countryCode || steamUser + ' has decided to not share this information',
+                        profilePicture: userSummary.avatar.medium
                     })
                     .save()
                     .then(result => 
-                        res.redirect('/profile')
+                        res.redirect('/profile/' + result.username)
                     )
                 })
             }).catch(err => {
@@ -40,7 +38,7 @@ router.post('/login', (req, res) => {
             })
             return
         }
-        res.redirect('/profile')
+        res.redirect('/profile/' + result.username)
     })
 })
 

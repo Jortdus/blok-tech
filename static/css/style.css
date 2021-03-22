@@ -12,13 +12,13 @@
 }
 
 body {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
-    text-align: center;
+    /* text-align: center; */
 }
 
 main {
-    padding-top: 30%;
+    padding-top: 20%;
 }
 
 textarea, input {

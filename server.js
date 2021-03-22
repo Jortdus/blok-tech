@@ -4,9 +4,7 @@ const bodyParser = require('body-parser')
 const app = express();
 const port = process.env.PORT || 5000
 const connectDB = require('./model/db.js')
-// const SteamAPI = require('steamapi');
-// const steam = new SteamAPI(process.env.STEAMAPI);
-const User = require("./model/user.js")
+const userSchema = require("./model/user.js")
 const router = require("./route/steamFetch.js")
 const profile = require("./route/profile.js")
 

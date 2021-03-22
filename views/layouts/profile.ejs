@@ -6,12 +6,20 @@
 </head>
 
 <body>
-<h1>thanks for entering your information</h1>
-</body>
+    <main>
+        <span><%= profile.username %></span>
+        <br>
+        <span><%= profile.steamID %></span>
+        <br>
+        <span><%= profile.country %></span>
+        <br>
 
-<footer>
-    <%- include('../partials/footer') %>
-</footer>
+        <img src="<%= profile.profilePicture %>"">
+    </main>
+
+    <footer>
+        <%- include('../partials/footer') %>
+    </footer>
 </body>
 
 </html>
