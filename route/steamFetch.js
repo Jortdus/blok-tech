@@ -16,17 +16,17 @@ router.get('/', (req, res) => {
 
 router.post('/login', (req, res) => {
     const { id: steamUser } = req.body
+    const gameGenre = req.body.gameGenre
     User.findOne({username: steamUser}).then(result => {
         if (!result) {
             steam.resolve(steamUser).then(id => {
-
                 steam.getUserSummary(id).then(userSummary => {
-                    console.log(userSummary)
                     new User({
                         username: steamUser,
                         steamID: userSummary.steamID,
                         country: userSummary.countryCode || steamUser + ' has decided to not share this information',
-                        profilePicture: userSummary.avatar.medium
+                        profilePicture: userSummary.avatar.medium,
+                        gameGenre: gameGenre
                     })
                     .save()
                     .then(result => 

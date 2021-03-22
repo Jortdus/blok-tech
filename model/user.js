@@ -5,6 +5,7 @@ const userSchema = new mongoose.Schema({
     steamID: String,
     country: String,
     profilePicture: String,
+    gameGenre: String,
 });
 
 module.exports = mongoose.model('user', userSchema)
