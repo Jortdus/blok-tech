@@ -9,4 +9,5 @@ const userSchema = new mongoose.Schema({
     gameGenre: String,
 });
 
+// Exporting Schema
 module.exports = mongoose.model('user', userSchema)

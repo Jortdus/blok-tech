@@ -35,6 +35,7 @@ app.use(function (req, res, next) {
     res.status(404).send("This page does not exist.")
 })
 
+// Connection confirmation in console.
 app.listen(port, () => {
     console.log('Server is running!', port)
 })

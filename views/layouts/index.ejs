@@ -11,19 +11,23 @@
         <h3>Sign up</h3>
         <%= message %>
         <form action="/signup" method="POST" id="signup-form">
-            <label>Your SteamID : </label>
-            <input type="text" name="id" placeholder="steamID">
-            <br>
-            <label>Most played genre :</label>
-            <select name="gameGenre" id="gameSelect" required>
-                <option>Select a genre</option>
-                <option value="MMORPG">MMORPG</option>
-                <option value="ARPG">ARPG</option>
-                <option value="FPS">FPS</option>
-                <option value="Sports">Sports</option>
-                <option value="MOBA">MOBA</option>
-                <option value="RTS">RTS</option>
-            </select>
+            <span>
+                <label>Your SteamID : </label>
+                <input type="text" name="id" placeholder="steamID">
+            </span>
+            <span>
+                <label>Most played genre :</label>
+                <select name="gameGenre" id="gameSelect" required>
+                    <option>Select a genre</option>
+                    <option value="MMORPG">MMORPG</option>
+                    <option value="ARPG">ARPG</option>
+                    <option value="FPS">FPS</option>
+                    <option value="Sports">Sports</option>
+                    <option value="MOBA">MOBA</option>
+                    <option value="RTS">RTS</option>
+                </select>
+            </span>
+
             <br>
             <input type="submit" value="Sign up" id="login-signup-submit">
             <br>
