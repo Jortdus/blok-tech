@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head') %>
+</head>
+
+<body>
+    <main>
+        <h1>Gamematch</h1>
+        <h3>Login</h3>
+        <%= message %>
+        <form action="/login" method="POST" id="login-form">
+            <label>
+                Your SteamID : 
+            </label>
+            <input type="text" name="id" placeholder="steamID">
+            <br>
+            <input type="submit" value="Login" id="login-signup-submit">
+            <br>
+            <a href="/">Don't have an account yet?</a>
+        </form>
+    </main>
+
+    <footer>
+        <%- include('../partials/footer') %>
+    </footer>
+</body>
+
+
+</html>

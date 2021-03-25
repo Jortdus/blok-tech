@@ -7,6 +7,7 @@ const connectDB = require('./model/db.js')
 const userSchema = require("./model/user.js")
 const router = require("./route/steamFetch.js")
 const profile = require("./route/profile.js")
+const login = require("./route/login.js")
 
 // call on db connection module
 connectDB();
@@ -27,6 +28,7 @@ app.set('view engine', 'ejs')
 // rendering
 app.use(router)
 app.use(profile)
+app.use(login)
 
 // 404 error handling 
 app.use(function (req, res, next) {
