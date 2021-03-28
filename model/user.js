@@ -7,6 +7,7 @@ const userSchema = new mongoose.Schema({
     country: String,
     profilePicture: String,
     gameGenre: String,
+    url: String
 });
 
 // Exporting Schema

@@ -43,8 +43,9 @@ router.post('/signup', (req, res) => {
                                 username: steamUser,
                                 steamID: userSummary.steamID,
                                 country: userSummary.countryCode || steamUser + ' has decided to not share this information',
-                                profilePicture: userSummary.avatar.medium,
-                                gameGenre: gameGenre
+                                profilePicture: userSummary.avatar.large,
+                                gameGenre: gameGenre,
+                                url:userSummary.url
                             })
                             .save()
                             // redirect to profile page of user.

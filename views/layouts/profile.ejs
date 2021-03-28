@@ -7,14 +7,18 @@
 
 <body>
     <main>
-        <img src="<%= profile.profilePicture %>"">
-        <span><%= profile.username %></span>
-        <br> 
-        <span>Country <%= profile.country %></span>
-        <br>
-        <span>Game genre <%= profile.gameGenre %></span>
+        <div id="profile-header">
+            <img src="<%= profile.profilePicture %>" id="profile-pic">
+            <p id="profile-username"><%= profile.username %></p>
+        </div>
 
-        
+        <div id="profile-info">
+            <p>Country: <span><%= profile.country %></span></p> 
+            <p>Game genre: <span><%= profile.gameGenre %></span> </p>
+            <a href="<%= profile.url %>">Steam account</a>
+        </div>
+
+
     </main>
 
     <footer>
