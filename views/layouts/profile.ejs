@@ -18,6 +18,13 @@
             <a href="<%= profile.url %>">Steam account</a>
         </div>
 
+        <div>
+            <form method='POST' action="/removeUser">
+                <input type="hidden" id="button" name="removeUser" value="<%= profile.username%>">
+                <input type="submit" id="login-signup-submit" value="Remove user">
+            </form>
+        </div>
+
 
     </main>
 

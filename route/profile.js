@@ -14,4 +14,10 @@ profile.get('/profile/:username', (req, res) => {
     })
 })
 
+profile.post('/removeUser', (req, res) => {
+	scheme.findOneAndDelete(req.body.removeUser).then(result => {
+		res.redirect('/')
+	})
+})
+
 module.exports = profile;

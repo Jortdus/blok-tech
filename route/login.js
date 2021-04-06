@@ -23,7 +23,7 @@ login.post('/login', (req, res) => {
     const {
         id: steamUser
     } = req.body
-
+                                    
     const gameGenre = req.body.gameGenre
     User.findOne({
         username: steamUser
